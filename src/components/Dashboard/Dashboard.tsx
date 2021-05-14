@@ -1,5 +1,6 @@
 import React from 'react';
 import useGetCollection from '../../hooks/useGetCollection';
+import Layout from '../Layout';
 
 const Dashboard = () => {
     const items = useGetCollection(
@@ -7,10 +8,10 @@ const Dashboard = () => {
     );
 
     return (
-        <div>
+        <Layout>
             Dashboard goes here...Oh look, some data =>{' '}
             {JSON.stringify(items, null, 4)}
-        </div>
+        </Layout>
     );
 };
 

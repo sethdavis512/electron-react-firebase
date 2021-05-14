@@ -1,7 +1,8 @@
 import React from 'react';
+import Box from '../Box';
 
 const Main = ({ children }) => {
-    return <main>{children}</main>;
+    return <Box as="main">{children}</Box>;
 };
 
 export default Main;
